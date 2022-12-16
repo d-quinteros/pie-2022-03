@@ -1,0 +1,775 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+		table, td, th {
+ 		border: 1px solid black;
+		}
+
+		table {
+  		border-collapse: collapse;
+ 		width: 100%;
+		}
+
+		td {
+  		text-align: center;
+		}
+			
+		figure {
+		  border: 1px #cccccc solid;
+		  padding: 4px;
+		  margin: auto;
+		}
+
+		figcaption {
+		  background-color: black;
+		  color: white;
+		  font-style: italic;
+		  padding: 2px;
+		  text-align: center;
+		}
+			
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+			
+		cap_text {
+  		  font-size: 14px;
+		}
+
+		</style>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>Ripple</h1>
+								<p>A fully analog synthesizer keyboard with an attatched kinetic sculpture.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#description">Description</a></li>
+								<li><a href="#mechanical">Mechanical</a></li>
+								<li><a href="#electrical">Electrical</a></li>
+								<li><a href="#software">Software</a></li>
+								<li><a href="#budget">Budget</a></li>
+								<li><a href="#media">Media</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Description -->
+							<article id="description">
+								<h2 class="major">Description</h2>
+								<span class="image main"><img src="images/description.png" alt="" /></span>
+								<h3 class="major">Summary Overview</h3>
+								<p>For our half semester long project in PIE class, we have been working on creating an analog synthesizer controlled by a two-octave wooden keyboard. This synthesizer produces sound and also controls a mechanical display that adds a visually interesting element to the project.
+The mechanical display is made up of 24 concentric rings of mirrored acrylic that oscillate up and down, starting at the most central ring and moving outward. This creates the effect of a ripple, similar to the one caused by a water droplet. The speed of the rings is controlled by the frequency of the note being played on the synthesizer, so a higher note results in faster ripples. The rings are moved by 12 servo motors, each attached to its own cam shaft.
+The analog synthesizer itself is a two octave system made up of a hysteretic oscillator with potentiometers, which are used to tune the pitch of each key on the keyboard. These components work together to produce sound, and the user can tune the sound by adjusting the potentiometers.
+Overall, our project combines both sound and visual elements to create an interactive and engaging experience. The user can play notes on the wooden keyboard and watch as the mechanical display responds to the frequency of the notes being played. The combination of the synthesizer and the mechanical display allows for a unique and dynamic experience that is not possible with just one of these elements alone.
+</p>
+								<a href="https://drive.google.com/drive/folders/1FMGoaOzOkpSIx9jJTvLT0pdStkrhJoxq?usp=sharing">DEMO VIDEOS</a>
+								<span class="image main"><img src="images/WHOLE SYSTEM.png" alt="" /></span>
+							</article>
+
+						<!-- Electrical -->
+							<article id="electrical">
+								<h2 class="major">Electrical</h2>
+								
+								<h3 class="major">Electrical Progress</h3>
+								<header id="elecsprints">
+									<nav>
+										<table style="width:100%">
+  											<tr>
+   												<td><a href="#elecsprint1">Sprint 1</a></td>
+   												<td><a href="#elecsprint2">Sprint 2</a></td>
+												<td><a href="#elecsprint3">Sprint 3</a></td>
+ 											</tr>
+										</table>
+									</nav>
+								</header>
+								
+								<h3 class="major">Mathematics for the Circuitry</h3>
+								<header id="elecsprints">
+									<nav>
+										<table style="width:100%">
+  											<tr>
+   												<td><a href="#hysteretic">Hysteretic Circuit</a></td>
+												<td><a href="#vco">Voltage Controlled Oscillator</a></td>
+												<td><a href="#displaycircuit">Kinematic Display</a></td>
+ 											</tr>
+										</table>
+									</nav>
+								</header>
+
+							</article>
+						
+						<!-- Electrical Sprint 1 -->
+							<article id="elecsprint1">
+								<h2 class="major">Sprint 1</h2>
+								<p>During the first sprint the electrical team was able to make a working hysteretic oscillator for a full scale. We were able to tune each note to make the scale and used an audio headphone jack connected to old wired apple headphones. </p>
+								<img src="images/Electrical_Sprint1.jpg" width="480" height="" alt="" />
+								<p>Under each key on the mechanical keyboard are tactile switches, which pick the resistor value in the RC value in the circuit.</p>
+								<p><a href="https://youtube.com/shorts/jmTknJDjco0?feature=share">Sprint 1 Video</a></p>
+							</article>
+						
+						<!-- Electrical Sprint 2 -->
+							<article id="elecsprint2">
+								<h2 class="major">Sprint 2</h2>
+								<p>During the second sprint, we worked on a new voltage controlled oscillator to allow for future improvements in the project. This included research into parts for power, an exponential converter (NPN transistor based), and an oscillator for sawtooth, triangle, and square. We started learning about how analog VCO’s work and we found the overall designs are consistent throughout the circuits. For this sprint, we wanted to get a design we found online working before we designed our own. We designed the circuit in simulation, but we were running into issues with the integrator in LTspice, but we did eventually get the issues resolved.</p>
+								<span class="image main"><img src="images/Electrical_Sprint2.png" alt="" /></span>
+								<p>We then built the circuit with a breadboard to see how it would work.</p>
+								<img src="images/Experiment.jpg" width="480" height="" alt="" />
+								<p>This was the test set up for the breadboard. This new system decreased the amount of wiring needed and we cleaned up the circuit for this sprint using the best techniques for clean breadboards.</p>
+							</article>
+
+						<!-- Electrical Sprint 3 -->
+							<article id="elecsprint3">
+								<h2 class="major">Sprint 3</h2>
+								<p>We designed our own VCO and made the calculations for frequencies with the new VCO, finished the new VCO, and made it tunable with a potentiometer. We spent a lot of time during this sprint troubleshooting the issues we had with the VCO. Especially the differential op amp configuration and the interface between exponential converter and integrator. We also set up all the power for all the parts of the electrical system. </p>
+							</article>
+						
+						<!-- Hysteretic -->
+							<article id="hysteretic">
+								<h3 class="major">Mathematics for the Hysteretic Circuit Design</h3>
+								
+								<figure>
+									<img src="images/Hysteretic_oscillator.png" width="480" height="" alt="" style="width:50%;"/>
+									<figcaption><cap_text>Figure 1: Hysteretic oscillator schematic</cap_text></figcaption>
+								</figure>
+								
+								<p>Our goal for the hysteretic oscillator was to tune it to 1 Hz and then put potentiometers in parallel attached to switches as a substitute to the resistor in the RC values. We knew there was 12-V coming from the power connection. This was all we needed to calculate the component values to produce an oscillating square wave with the desired frequencies. We first wanted a duty cycle of .5 or 50% for the hysteretic oscillator because it would make the rest of the calculations and simulations less complicated. The duty cycle of the oscillation depends on the difference between the reference voltage and power voltage to the op-amp.</p>
+								
+								<figure>
+									<img src="images/duty_figure.png" width="480" height="" alt="" style="width:50%;"/>
+									<figcaption><cap_text>Figure 2: Illustrates the relationship between the reference voltage and the duty cycle of the oscillations. Each line represents a different α value where, </figcaption>
+								</figure>
+
+								<p>The equation for the duty cycle for a hysteretic oscillator is,</p>
+								<span class="image main"><img src="images/Eqn_1.png" alt="" /></span>
+								
+								<p>which we used to check the duty cycle output of our values. After plugging our values into the equation it became,</p>	
+								<img src="Eqn_4.png" width="160" height="" alt=""/>
+								
+								<p>which demonstrates why the value of $\alpha$ has no effect on the duty cycle when</p>
+								<img src="Eqn_2.png" width="160" height="" alt=""/>
+									
+								<p>The next calculations were made for the values of the components that changed the period of the oscillator. We used the $0.1\mu F$ capacitor in the low-pass filter because this was a reasonable value we had access to. Since the time constant ($\tau$) of the filter is $RC$, we needed a larger resistor value to compensate for the low capacitor value. This is because when the $\tau$ value is low you need a lower $\alpha$, but there are limits to the size of $\alpha$.</p>	
+								
+								<figure>
+									<img src="images/alpha_figure.png" width="480" height="" alt="" style="width:50%;"/>
+									<figcaption><cap_text>Figure 3: This graph demonstrates at $V_{ref} = \frac{1}{2}V_{dd}$ lowering the $\alpha$ value lowers the $\tau$ needed for the same period. This means at the higher $\tau$ values, you are allowed to use larger $\alpha$ values, but as the $\tau$ gets smaller you need a lower $\alpha$ value.</cap_text></figcaption>
+								</figure>
+								
+								<p>In order to get those smaller $\alpha$ values you need bigger resistor values and it appeared like the needed resistor values were much larger than the ones we had quick access to, so based on that we knew we wanted the $\tau$ value to be as big as possible. With the $RC$ values for $\tau$ figured out, we can solve for $\alpha$ using the hysteretic oscillator period equation,</p>
+								<p>\begin{equation}T = \tau ln\frac{V_{dd}-\alpha(V_{dd}-V_{ref})}{\alpha(V_{dd}-V_{ref})}\frac{V_{dd}-\alpha V_{ref}}{\alpha V_{ref}}.\end{equation}</p>
+								<p>The equation is then,</p>
+								<p>\begin{equation}1 = .0000001*2000000* ln\frac{12-\alpha(6)}{\alpha(6)}\frac{12-\alpha (6)}{\alpha (6)},\end{equation}</p>
+								<p>when the known values are inserted into variables. we used graphing tools to find the value of $\alpha$ for the resistor values we would use in $\tau$,</p>
+								<p>We rearranged $\alpha  = \frac{R_{2}}{(R_{1} + R_{2})}$ to isolate $R_{1}$ on one side of the equation. Thus, the equation became,<p>
+								<p>\begin{equation}R_{1} = \frac{R_{2} - \alpha R_{2}}{\alpha}.\end{equation}</p>
+								<p>We used Excel to compute the $R_{1}$ values by plugging every resistor value available to use for this project into $R_{2}$. We also used Excel to visually compare the outputs of $R_{1}$ values to real resistor values that were provided in this project. We had a column that would find the nearest real resistor value from the calculated $R_{1}$ values and calculated the error $\%$ between them. The equation for the error was,</p>
+								<p>\begin{equation}Error \% = \frac{R1_{Real}-R1_{Calculated}}{R1_{Real}} * 100\end{equation}</p>
+								<p>The lowest error percentage we calculated was .8\% with $R_{1}$ being $80.6\Omega$ and $R_{2}$ being $14.3\Omega$. We did these calculations with the resistors we had access to. This error works for the equivalent ratio with the larger resistor values, such as, $80.6k\Omega$ and $14.3k\Omega$ There were a few other low percentages, but no other combination of resistor values produced an error percent close to this. </p>
+								<p>The next values we calculated were the resistors for the voltage divider to make the input of the hysteretic oscillator exactly $\frac{1}{2}V_{dd}$. We wanted the resistor values to be as low as possible, but since the resistors are rated for lower power ratings we needed resistors large enough to drop the power to less than their power ratings. We used $1K\Omega$ resistors to drop the current. </p>
+								<p>The calculations we made for all the components would create the following waveform,</p>
+								
+								<figure>
+									<img src="images/Single_period.png" width="480" height="" alt="" style="width:50%;"/>
+									<figcaption><cap_text>Figure 4: This is a single waveform created from the hysteretic oscillator. This particular waveform was the ideal simulation with no error accounted for except from the calculations made for the components. It is key to note the period is nearly 1 second and the characteristics of the waveform are similar to those expected. The voltage goes between the rails of the op-amp, which are at 12-V and 0-V. The duty cycle is also clearly seen as .5 or 50\%</cap_text></figcaption>
+								</figure>
+							</article>
+						
+						<!-- VCO -->
+							<article id="vco">
+								<h3 class="major">Voltage Controlled Oscillator</h3>
+								<p>The new electrical system we implemented to replace the hysteretic oscillator was a voltage controlled oscillator. </p>
+								<span class="image main"><img src="images/VCO.png" width="480" height="" alt="" /></span>
+								<p>The VCO is built on three main components: the controller, the exponential converter, and the oscillator.</p>
+								<p>The controller is a resistor string, which acts as different voltage dividers for each note. We used 100Ω resistors and since the input voltage is 6V we had the total resistance at 3K, thus, each note would drop the voltage but .2V. This made the calculations easier when we needed to convert them for the exponential converter. We calculated that we needed each note to change but .0015V for the exponential converter to play them sequentially. We used a summing op amp configuration to convert the .2V drops to .0015V drops. We then used a voltage reference with the summing op amp to shift the notes up in the full range to play the 4th and 5th octaves. In order to get this reference we used a potentiometer isolated with a buffer. This also allowed us to tune the piano and shift into different octaves.</p>
+								<p>The controller voltages then lead to the exponential converter. The most common way of creating an exponential converter is to use a bipolar junction transistor (BJT). We used two NPN transistors to make this computation. The equation for the current output is,</p>
+								<p>I_{c} = I_{s}\cdot (e^{ \frac{V_{be}}{V_{T}}}-1),</p>
+								<p>where</p>
+								<ul>
+									<li>Ic = the transistors collector current</li>
+									<li>Vbe=Vbe= the transistors base-emitter voltage, i.e. the voltage difference between the base and the emitter</li>
+									<li>q=1.6⋅10^−19 Coulombs (electron charge)</li>
+									<li>k=1.38⋅10^−23 Joules/Kelvin (Boltzmann's constant)</li>
+									<li>T= absolute temperature in degrees Kelvin.</li>
+								</ul>
+								<p>The results of the circuit were:</p>
+								<span class="image main"><img src="images/Exponential.png" width="480" height="" alt="" /></span>
+								<p>We can clearly see that it produces an exponential current output. This is because frequencies in pianos are logarithmic. The exponential converter uses an op amp connecting the current reference to the emitters of the two NPN transistors. This op amp acts as a current source to hold the current thru the transistor fixed. We used a value of 600K for the reference current input, so the current would be .1uA. We used two NPN transistors to create the output current because coupling them in this configuration gets rid of the temperature dependence of Is.</p>
+								<p>After the exponential converter we had the voltage controlled oscillator. The design of the VCO was a current to voltage converter, then an integrator, with a schmitt trigger connecting to a NPN transistor with its emitter connected to -6V, which will drain the capacitor.</p>
+								<img src="images/Waves.jpg" width="480" height="" alt=""/>
+								<p>The output of our designed VCO was a sawtooth wave, but we were having the top part of the signal being cut off. We then added a resistor connecting from the schmitt trigger to the NPN base. We got the new VCO to work with a fine tune potentiometer for the scale and a potentiometer to choose the octave. The final output of this circuit is below.</p>
+							</article>
+						
+						<!-- Electrical System for the Kinematic Display -->
+							<article id="displaycircuit">
+								<h3 class="major">Electrical System for the Kinematic Display</h3>
+								<p>We needed to connect the kinematic display to a powerful enough power supply to move all of the rings. The final circuit is below.</p>
+								<span class="image main"><img src="images/Kinematic_Display_Circuit.png" alt="" /></span>
+								<p>We connected each servo PWM signal to the digital pins of the arduino and powered them on their own power supply. We needed a lot of current for the servos, so we used a computer battery, which supplies 5V for the servos.</p>
+							</article>
+						
+						<!-- Mechanical -->
+							<article id="mechanical">
+								<h2 class="major">Mechanical</h2>
+
+								<h3 class="major">Description</h3>
+								<p>The mechanical aspect of our project consists of a keyboard as well as a mechanical display. The final keyboard iteration is a wooden two octave keyboard made up of 24 keys. The black keys are made of mahogany and the white keys from a light plywood. The keys are spring loaded with a class 3 lever system. The key's movement is restricted by rods that run through stoppers attached to each key. The keys were each cut individually on a shopbot in 2.5D, cutting out the side profile of the black keys and the top profile of the white keys. We faced multiple challenges with friction between keys as well as finding the sweet spot in spring length and spring constant values. This keyboard accomplished Austin’s goal of making a visually aesthetic product.</p>
+								
+								<h3 class="major">Mechanical Progress</h3>
+								<header id="mechsprints">
+									<nav>
+										<table style="width:100%">
+  											<tr>
+   												<td><a href="#mechsprint1">Sprint 1</a></td>
+   												<td><a href="#mechsprint2">Sprint 2</a></td>
+												<td><a href="#mechsprint3">Sprint 3</a></td>
+ 											</tr>
+										</table>
+									</nav>
+								</header>
+								
+								<h3 class="major">Keyboard</h3>
+								<span class="image main"><img src="images/keyboard.png" alt="" /></span>
+								<p>Our mechanical aspect of our project consists of a keyboard as well as a mechanical display. The final keyboard iteration is a wooden two octave keyboard made up of 24 keys. The black keys are made of mahogany and the white keys from a light plywood. The keys are spring loaded with a class 3 lever system. The key's movement is restricted by rods that run through stoppers attached to each key. The keys were each cut individually on a shopbot in 2.5D, cutting out the side profile of the black keys and the top profile of the white keys.</p>
+								<span class="image main"><img src="images/keys.png" alt="" /></span>
+								<p>We faced multiple challenges with friction between keys as well as finding the sweet spot in spring length and spring constant values. This keyboard accomplished Austin’s goal of making a visually aesthetic product.</p>
+								
+								<h3 class="major">Ripple Display</h3>
+								<p>The greatest challenge we faced was scoping the final product. With the ideal system being capable of presenting itself with the grandeur of a mechanical art piece emulating the unfathomable beauty and complexity of a ubiquitous event. We initially designed a display with 60 concentric rings encased within a 2 foot diameter housing which would contain all of the electrical components and hopefully muffle any unwanted noise that would distract the listener from the analog synthesizer. As the project moved forward, we began to blend our imitation  with the promise of greater flexibility for the sake of visual appeal. This resulted in a system that required 4 sets of 16 servos each responsible for a quarter of a ring, as well as the ring directly above and below through a 1:1 gear ratio positioned slightly offset with to one another in order to smoothen out the wave and simulate 60 rings while only comprising of 20 independently controlled rings. Issues began to arise when the cost of this large scale system came into play. Although possible, 64 servos would have been the entirety of our budget while still requiring an adequate power supply along with the necessary number of Arduinos to control them. During the final sprint of our project it was decided that for simplicity's sake we would limit ourselves to 12 servos and have them each responsible for controlling one camshaft that would evenly raise two Delrin rails up and down. The mirrored acrylic rings would be connected to these rails and allow for the undulating motion to be displayed resembling rippling water. The final product was an icositetrahedron prism two feet in diameter and over one and a half feet in height. The lids and outer walls, which were responsible for positioning the servos, the shafts, and the rails, were made up of quarter inch thick plywood that was laser cut to specifications. In addition to being structurally sound, the aspect of symmetry was incorporated into all of the design elements in order to maintain a unique but simple aesthetic while allowing for a high degree of versatility with the final fabrication process. The cam shaft rails were laser cut out of Delrin in order to prevent the warping and flexing prevalent in woods and acrylics. Cams were 3d printed and the shafts upon which they were mounted were made of threaded, quarter inch, galvanized steel, for rigidity and lack of linear deviation (straightness).</p>
+								<span class="image main"><img src="images/sculpture_assembly.png" alt="" /></span>
+								
+							</article>
+						
+						
+						<!-- Mechanical Sprint 1 -->
+							<article id="mechsprint1">
+								<h2 class="major">Sprint 1</h2>
+								
+								<h3 class="major">Analog Synthesizer</h3>
+								<p>Our first iteration of the piano was a single octave that was made up of 3D printed keys and a laser cut yuca board frame. This first iteration proved that the wiring was possible as well as the basic design. It also illuminated that we were going to have a problem with friction between the piano keys as well as perfecting the springs as the keys were too hard to press down in this iteration.</p>
+								<p><a href="https://www.youtube.com/shorts/jmTknJDjco0">Synth Video</a></p>
+								
+								<h3 class="major">Rings</h3>
+								<p>For the initial design we decided to scale down the product in order to decrease the manufacturing time and prove the functionality of our idea. The structural panels were made out of clear acrylic in order to allow for maximum visibility of the working components from all angles. The system, which was built to create the ring undulations, consisted of six herringbone gears, each with an extruded cylinder towards the edge in order to act within a scotch yoke system in order to raise and lower the rings in time with one another. The 3d printed herringbone gears were specifically chosen to line up the z axis of all the wooden dowel cam shafts while in motion. The reason for this was that at the time we had mounted the gears to metal bolts that slid into nylon bearings within the structural panels, and while the system ran, ordinary gears would shift and drop the camshafts. The design functioned with two modes, one with the geared cams to display the scalability of the design, and a smooth version to display how the individually controlled rings would undulate.</p>
+								<p><a href="https://www.youtube.com/shorts/ZF3T-hwDMrc">Rings Video</a></p>
+							</article>
+						
+						<!-- Mechanical Sprint 2 -->
+							<article id="mechsprint2">
+								<h2 class="major">Sprint 2</h2>
+								
+								<h3 class="major">Analog Synthesizer</h3>
+								<p>While mostly focusing on the next iteration for the rings, we finalized the design for the final keyboard. We decided to use wood for both aesthetics as well as reducing inter-key friction. We also decided to move from a class two lever system to a class three lever system so that we could utilize the springs we had access to while also reducing the necessary force to play a note with a key press.</p>
+								
+								<h3 class="major">Rings</h3>
+								<p>From the first sprint we had learned a great deal about the frictional forces present between wood and nylon, along with those found between gears. The slightest variation in opposing cam angles would cause the cam shafts to lock up and damage the system. In this second iteration we also planned to create the basis for the modular idea upon which the final product stood. The plan was to create a one set of walls that would lift one ring, and have them be attached to another set that lifts a concentric ring directly above the first. This plan allowed us to not have to worry about using a large number of resources only to pivot in a direction that would result in the waste of those said resources. We had removed the idea of gears to increase ring count and the cam shafts had been switched to Delrin by this point; these two changes eliminated the catching that would occur during cam rotations. The visual aspect however was nowhere near up to par and required a great deal of redesign to be used for the final product.</p>
+								<p><a href="https://www.youtube.com/watch?v=Xs8LGzl4_k8">Rings Video</a></p>
+							</article>
+						
+						<!-- Mechanical Sprint 3 -->
+							<article id="mechsprint3">
+								<h2 class="major">Sprint 3</h2>
+								
+								<h3 class="major">Analog Synthesizer</h3>
+								<p>In this sprint, we manufactured the final iteration of the keyboard designed in Sprint 2.</p>
+								<p><a href="https://www.youtube.com/shorts/jmTknJDjco0">Synth Video</a></p>
+								
+								<h3 class="major">Rings</h3>
+								<p>For the last sprint we created the panel design that would encompass the shaft system and decided upon creating a lid with enough holes to provide back up slots in case a set of holes didn’t cut properly. The product was made to be full scale and created the desired impression of grandeur. The only issues we found were that the Delrin rails would slip off their cams and they would change angles and get stuck much more easily than in the last design. This one lacking the nylon bearings due to the thicker rail choice caused us to rethink our lid.</p>
+								<p><a href="https://www.youtube.com/shorts/ZF3T-hwDMrc">Rings Video</a></p>
+								
+								<h3 class="major">Addtions Before Demo</h3>
+								<p>In order to make a functioning product for demo day 3d printed plates were added below the rails to allow for more contact area and decreased risk of cam slippage. The top plate was now assisted with a second raised plate to prevent any unwanted movement.</p>
+							</article>
+
+						<!-- Software -->
+							<article id="software">
+								<h2 class="major">Software</h2>
+								<span class="image main"><img src="images/Arduino_Logo.png" width="960" height="" alt="" /></span>
+								
+								<h3 class="major"> Description</h3>
+								<p>The software component of our project mainly consists of a function that is able to calculate the frequency generated by our analog synthesizer, and a function that moves the servos at offset starting times, so as to create a ripple pattern. The ripple effect carries out at varying speeds based on the read frequency. The higher the frequency, the faster the ripple. This project's software is entirely self-contained in Arduino.</p>
+								
+								<header id="softwareparts">
+									<nav>
+										<table style="width:100%">
+  											<tr>
+   												<td><a href="#waveread">Analog Wave Reading</a></td>
+   												<td><a href="#servos">Servo Movement</a></td>
+ 											</tr>
+										</table>
+									</nav>
+								</header>
+								
+								<a href="https://olincollege-my.sharepoint.com/:f:/g/personal/dquinteros_olin_edu/EmpySH3NaJlLi0h0GwowSPgBzqOu_DR6HzDdZbJKsWTGNQ?e=CBc1uD">FULL CODE</a>
+								
+							</article>
+						
+						<!-- Wave Reading -->
+							<article id="waveread">
+								<h2 class="major">Analog Wave Reading</h2>
+								
+								<span class="image main"><img src="images/wave_reading.png" width="960" height="" alt="" /></span>
+								<p>To calculate the frequency, we have to determine the period of the generated wave. Our code is constantly reading the voltage input from the keyboard, through an analog port, and updating the “current voltage” variable, which oscillates between 0 and 800.</p>
+								<p>To find the period, we tracked the amount of time, in microseconds, that it took for the voltage reading to surpass the threshold value. The actual threshold value does not matter, as long as it is between the minimum and maximum values possible, which in this case are 0 and 800, respectively. For our project, we used a threshold value of 400.</p>
+								<p>After determining the period, in microseconds, we converted it into seconds by multiplying the value by 1,000,000. Lastly, we used the equation f = 1 / T, in which “f” is the frequency and “T” is the period, to calculate the frequency.</p>
+							</article>
+						
+						<!-- Servo Movement -->
+							<article id="servos">
+								<h2 class="major">Servo Movement</h2>
+								<p>Using servos for our project, we decided to expand upon the simple “Sweep” code provided by the Arduino Examples. The example code sweeps the servo back and forth across 180 degrees, with the “speed” being determined by an increment value, which represents the amount, in degrees, the servo can move at one time. The first step was to get all of the servos moving, so we expanded the starting example code to include 12 servo motors.</p>
+								<p>Next, we needed the servos to vary in speed depending on the frequency being read from the analog synth. The “speed” in this case is determined by an increment value, as stated previously. The larger the increment value, the faster the motors. We decided to set the increment value equal to the frequency / 10. The scaling of the frequency provides us with a reasonable increment value to ensure the servo isn’t exceeding its speed limit and skipping steps, resulting in a lower range of movement. Therefore, when the frequency is changed, the speed of the servos will change accordingly.</p>
+								<p>Lastly, to get the ripple effect, the sweep motion of the servos needed to be offset to each other. To accomplish this, we created a function that will determine the position of any servo. We decided to have an off-set of 15 degrees, so that when the first servo reaches 180 degrees, the last servo will begin moving, resulting in a looped pattern. Using this logic, we created the equation below:</p>
+								<p>servo_position = servo_0_pos - angle_offset * servo_number</p>
+								<p>This equation can determine the position of any of the servos by knowing where in the order of movement the servo is: servo_number. If servo_position is less than 0, we made it so that it will keep the servo stationary at 0. This equation is only functional when sweeping from 0 to 180 degrees. Going from 180 to 0 degrees requires the equation below:</p>
+								<p>servo_position = servo_position = servo_0_pos + angle_offset * servo_number</p>
+								<p>The above equation follows similar logic to the previous example. Implementing these equations into a function that takes the position of servo 0 and the servo number of the servo being moved as parameters will provide a function that can determine the position of any servo in the display.</p>
+							</article>
+						
+						<!-- Budget -->
+							<article id="budget">
+								<h2 class="major">Budget</h2>
+								
+								<h3>Bill of Materials</h3>
+
+								<table style="width:100%">
+								  <tr>
+								    <th>Item</th>
+								    <th>Quantity</th>
+								    <th>Total Price</th>
+								    <th>Paid For?</th>
+								  </tr>
+								  <tr>
+								    <td>Limit Switches</td>
+								    <td>14</td>
+								    <td>$25.90</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>Push Buttons</td>
+								    <td>14</td>
+								    <td>$2.10</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Jumper Cables</td>
+								    <td>50+</td>
+								    <td>$2.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Breadboard</td>
+								    <td>1</td>
+								    <td>$5.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>10k Trim Pots</td>
+								    <td>24</td>
+								    <td>$7.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>LMC6484</td>
+								    <td>1</td>
+								    <td>$2.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Resistors/Capacitor</td>
+								    <td>A Lot</td>
+								    <td>$1.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>PD Trigger</td>
+								    <td>1</td>
+								    <td>$3.18</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>Speaker w/ Amp</td>
+								    <td>1</td>
+								    <td>$10.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Arduino</td>
+								    <td>1</td>
+								    <td>$18.00</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>Servos</td>
+								    <td>12</td>
+								    <td>$60.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>3/8" Plywood</td>
+								    <td>2171 sq in.</td>
+								    <td>$10.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Mahogany</td>
+								    <td>Some</td>
+								    <td>$15.00</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>Tig Rods</td>
+								    <td>2</td>
+								    <td>$0.20</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Springs</td>
+								    <td>14</td>
+								    <td>$4.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>1/8" Acrylic</td>
+								    <td>576 sq in.</td>
+								    <td>$32.95</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>1/4" Delrin</td>
+								    <td>1/4 Plate</td>
+								    <td>$15.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>2ft 1/4" Rods</td>
+								    <td>12</td>
+								    <td>$21.65</td>
+								    <td>Paid For</td>
+								  </tr>
+								  <tr>
+								    <td>Assorted Hardware</td>
+								    <td>A Lot</td>
+								    <td>$15.00</td>
+								    <td>Free</td>
+								  </tr>
+								  <tr>
+								    <td>Assorted 3D Prints</td>
+								    <td>A Lot</td>
+								    <td>$15.00</td>
+								    <td>Free</td>
+								  </tr>
+								</table>
+								
+								<table>
+								  <tr>
+								    <td>TOTAL</td>
+								    <td>$247.98</td>
+								  </tr>
+								  <tr>
+								    <td>TOTAL PAID</td>
+								    <td>$116.68</td>
+								  </tr>
+								</table>
+								
+							</article>
+						
+						<!-- Media -->
+							<article id="media">
+								<h2 class="major">Media</h2>
+								<a href="https://drive.google.com/drive/folders/1FMGoaOzOkpSIx9jJTvLT0pdStkrhJoxq?usp=sharing">DEMO VIDEOS</a>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
